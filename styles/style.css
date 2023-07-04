@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;600;700&display=swap");
+
+:root {
+	--color-c1: #f5f5f5ff;
+	--color-c2: #f0f0f0ff;
+	--color-c3: #e0e0e0ff;
+	--color-c4: #ccccccff;
+	--color-c5: #b8b8b8ff;
+	--color-c6: #a3a3a3ff;
+	--color-c7: #8f8f8fff;
+	--color-c8: #7a7a7aff;
+	--color-c9: #666666ff;
+	--color-c10: #525252ff;
+	--color-c11: #3d3d3dff;
+	--color-c12: #292929ff;
+	--color-c13: #141414ff;
+}
+/* font-family: 'Fira Sans', sans-serif; */
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+  font-family: 'Fira Sans', sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 50px 30px;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  gap: 40px;
+}
+
+.menu a {
+  color: var(--color-c13);
+  text-decoration: none;
+}
