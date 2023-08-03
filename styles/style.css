@@ -16,6 +16,7 @@
   --color-c11: #3d3d3dff;
   --color-c12: #292929ff;
   --color-c13: #141414ff;
+  --gradient: linear-gradient(#d66012ff 0%, #fea945ff 100%);
 }
 /* font-family: 'Fira Sans', sans-serif; */
 
@@ -24,6 +25,10 @@
   margin: 0;
   box-sizing: border-box;
   font-family: "Fira Sans", sans-serif;
+}
+
+ul {
+  list-style: none;
 }
 
 /* MENU */
@@ -103,5 +108,91 @@
   color: var(--color-c5);
 }
 
+/* EXPERIÊNCIAS */
 
+.experiencias {
+  max-width: 1200px;
+  padding: 40px 20px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 100px;
+}
 
+.experiencias-subtitulo {
+  font-size: 8rem;
+  line-height: 1;
+  text-transform: uppercase;
+  word-break: break-all;
+  max-width: 4ch;
+  color: var(--color-c6);
+}
+
+.experiencias-texto {
+  font-size: 1.5rem;
+  line-height: 1.33;
+  max-width: 40ch;
+  margin-bottom: 60px;
+  color: var(--color-c10);
+}
+
+.experiencias-texto strong {
+  color: var(--color-c13);
+}
+
+.empresa {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px 20px;
+  padding: 20px;
+  background: var(--color-c1);
+  margin-bottom: 20px;
+  border-radius: 4px;
+}
+
+.empresa::before {
+  content: "";
+  display: block;
+  width: 4px;
+  height: 20px;
+  background: var(--gradient);
+  position: absolute;
+  top: 20px;
+  left: -4px;
+}
+
+.empresa-ano {
+  position: absolute;
+  top: 20px;
+  left: -50px;
+  color: var(--color-c10);
+  font-size: 0.875rem;
+}
+
+.empresa-titulo {
+  font-size: 1.125rem;
+  line-height: 1.1;
+  font-weight: bold;
+}
+
+.empresa-texto {
+  font-size: 0.875rem;
+  color: var(--color-c10);
+  line-height: 1.4;
+}
+
+.empresa-habilidades {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-content: start;
+}
+
+.empresa-habilidades li {
+  font-size: 0.875rem;
+  line-height: 1.4;
+  border-radius: 4px;
+  background: white;
+  padding: 5px 10px;
+}
