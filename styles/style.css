@@ -317,7 +317,17 @@ ul {
   .experiencias-texto {
     max-width: 100%;
     font-size: 18px;
-    
+  }
+
+  .empresa {
+    padding: 30px;
+  }
+
+  .empresa-ano {
+    top: 10px;
+    left: 14px;
+    font-size: 0.75rem;
+    color: var(--color-c7);
   }
 }
 
