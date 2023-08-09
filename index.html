@@ -10,6 +10,9 @@
 </head>
 
 <body>
+
+  <a href="#topo" id="voltar-ao-topo" title="Voltar ao topo">↑</a>
+
   <header class="cabecalho">
     <div>
       <img src="img/marca.svg" alt="logo fmota-dev">
@@ -20,7 +23,7 @@
         <li><a class="menu-item" href="#experiencias">Experiências</a></li>
         <li><a class="menu-item" href="#formacao">Formação</a></li>
         <li><a class="menu-item" href="#contato">Contato</a></li>
-        <li><a class="menu-item" href="#">GitHub</a></li>
+        <li><a class="menu-item" href="https://github.com/fmota-dev" target="_blank">GitHub</a></li>
       </ul>
     </nav>
   </header>
@@ -92,7 +95,7 @@
       </div>
     </section>
 
-    <section class="formacao">
+    <section class="formacao" id="formacao" aria-label="Formação">
       <div class="formacao-container">
         <div>
           <p class="formacao-texto">Na área de desenvolvimento Front-end realizo estudos por conta própria, consumindo conteúdos e cursos disponibilizados na internet.</p>
@@ -144,7 +147,7 @@
       </div>
     </section>
 
-    <section class="fale-comigo">
+    <section class="fale-comigo" id="contato" aria-label="Contato">
       <h2>fale comigo</h2>
       <p>Estou disponivel para novos projetos no momento. Entre em contato comigo e marcamos uma conversa</p>
     </section>
@@ -166,6 +169,22 @@
     </ul>
   </footer>
 
+  <script>
+    const btnVoltarAoTopo = document.getElementById('voltar-ao-topo');
+
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 300) {
+        btnVoltarAoTopo.style.display = 'block';
+      } else {
+        btnVoltarAoTopo.style.display = 'none';
+      }
+    });
+
+    btnVoltarAoTopo.addEventListener('click', (e) => {
+      e.preventDefault();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  </script>
 </body>
 
 </html>
