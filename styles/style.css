@@ -127,6 +127,16 @@ ul {
   }
 }
 
+@media (max-width: 450px) {
+  .menu {
+    gap: 10px;
+  }
+
+  .menu-item {
+    font-size: 0.85rem;
+  }
+}
+
 /* SOBRE */
 
 .sobre {
@@ -331,6 +341,12 @@ ul {
   }
 }
 
+@media (max-width: 450px) {
+  .experiencias-subtitulo {
+    font-size: 3.1rem;
+  }
+}
+
 /* FORMAÇÃO */
 
 .formacao {
@@ -501,6 +517,44 @@ ul {
   }
 }
 
+@media (max-width: 450px) {
+  .formacao-subtitulo {
+    font-size: 3.8rem;
+  }
+
+  .formacao-texto {
+    margin-bottom: 20px;
+  }
+
+  .formacao-lista {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .formacao-lista-item {
+    margin-top: 15px;
+  }
+
+  .formacao-lista-item h3 {
+    color: #fff;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 32px; /* 133.333% */
+    margin-bottom: 25px;
+  }
+
+  .formacao-lista-item span {
+    color: var(--c-10, #525252);
+    font-size: 23px;
+    line-height: 32px; /* 133.333% */
+  }
+
+  div.logo img {
+    width: 48px;
+    height: 48px;
+  }
+}
+
 /* FALE COMIGO */
 
 .fale-comigo {
@@ -621,4 +675,11 @@ ul {
     font-size: 28px;
     line-height: 24px; /* 66.667% */
   }
+}
+
+@media (max-width: 450px) {
+  .rodape-menu-item a {
+    font-size: 22px;
+  }
+
 }
