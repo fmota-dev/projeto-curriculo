@@ -134,7 +134,6 @@ ul {
 }
 
 .container-sobre {
-  height: 579px;
   display: grid;
   grid-template-columns: 1fr 2fr;
   gap: 100px;
@@ -145,8 +144,8 @@ ul {
 }
 
 .img-perfil {
-  width: 340px;
-  height: 491px;
+  max-width: 100%;
+  height: auto;
   display: block;
 }
 
@@ -173,6 +172,46 @@ ul {
 
 .sobre p {
   color: var(--color-c5);
+}
+
+@media (max-width: 1000px) {
+  .sobre h1 {
+    font-size: 3.5rem;
+  }
+
+  .sobre h1::before {
+    width: 68px;
+    height: 60px;
+    top: -16px;
+    left: -78px;
+  }
+}
+
+@media (max-width: 750px) {
+  .sobre h1 {
+    font-size: 2.5rem;
+  }
+
+  .sobre h1::before {
+    top: -26px;
+  }
+}
+
+@media (max-width: 580px) {
+  .container-sobre {
+    grid-template-columns: 1fr;
+  }
+
+  .img-perfil {
+    display: none;
+  }
+
+  .sobre h1::before {
+    width: 126px;
+    height: 86px;
+    top: -69px;
+    left: -99px;
+  }
 }
 
 /* EXPERIÊNCIAS */
@@ -262,6 +301,24 @@ ul {
   border-radius: 4px;
   background: white;
   padding: 5px 10px;
+}
+
+@media (max-width: 1025px) {
+  .experiencias {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+
+  .experiencias-subtitulo {
+    font-size: 4.3rem;
+    max-width: 100%;
+  }
+
+  .experiencias-texto {
+    max-width: 100%;
+    font-size: 18px;
+    
+  }
 }
 
 /* FORMAÇÃO */
@@ -370,6 +427,70 @@ ul {
   color: var(--c-9, #666);
 }
 
+@media (max-width: 1325px) {
+  .formacao-container {
+    grid-template-columns: 1fr;
+    padding: 40px 20px;
+    gap: 50px;
+  }
+
+  .formacao-subtitulo {
+    font-size: 6rem;
+    order: -1;
+    max-width: 100%;
+  }
+
+  .andamento-container {
+    padding: 0px 20px;
+  }
+}
+
+@media (max-width: 750px) {
+  .formacao-subtitulo {
+    font-size: 5rem;
+  }
+
+  .formacao-texto {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.4;
+  }
+
+  .formacao-lista-item {
+    width: 100%;
+    height: auto;
+  }
+
+  .formacao-lista-item h3 {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 14px; /* 133.333% */
+  }
+
+  .formacao-lista-item span {
+    font-size: 16px;
+    line-height: 16px; /* 133.333% */
+  }
+
+  div.logo img {
+    width: 28px;
+    height: 28px;
+  }
+
+  .andamento-container h3 {
+    font-size: 18px;
+    line-height: 18px; /* 133.333% */
+  }
+
+  .andamento-container h3::before {
+    top: -4px;
+  }
+
+  .andamento-container li {
+    font-size: 14px;
+  }
+}
+
 /* FALE COMIGO */
 
 .fale-comigo {
@@ -395,6 +516,33 @@ ul {
   color: var(--color-c12);
   font-size: 40px;
   max-width: 40ch;
+}
+
+@media (max-width: 1135px) {
+  .fale-comigo {
+    gap: 50px;
+  }
+
+  .fale-comigo h2 {
+    font-size: 80px;
+    line-height: 80px;
+  }
+
+  .fale-comigo p {
+    font-size: 28px;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 830px) {
+  .fale-comigo {
+    grid-template-columns: 1fr;
+    padding: 40px;
+  }
+
+  .fale-comigo p {
+    font-size: 24px;
+  }
 }
 
 /* RODAPÉ */
@@ -451,4 +599,16 @@ ul {
   height: 48px;
   width: 48px;
   background: url(../img/logo-github2.svg);
+}
+
+@media (max-width: 1250px) {
+  .rodape {
+    flex-direction: column;
+    gap: 50px;
+    margin-left: 50px;
+  }
+  .rodape-menu-item a {
+    font-size: 28px;
+    line-height: 24px; /* 66.667% */
+  }
 }
